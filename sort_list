@@ -1,0 +1,69 @@
+"""
+Created on Sat Mar  5 15:56:44 2016
+
+@author: talisreks7
+"""
+List_of_drugs = ['Haloparidol', 
+                 'Quinperole', 
+                 'L-Dopa',
+                 'Amphetamine',
+                 'Methamphetamin',
+                 'PCP',
+                 'Cocaine',
+                 'Marijuana',
+                 'Ectasy',
+                 'LSD', 
+                 'Alcohol',
+                 'Prozac',
+                 'Adderall',
+                 'Ketamine']
+              
+# Sorts drugs by length of name (Work in progress)
+              
+def sort_drugs_name_length(list):
+    
+    largest_so_far = -1
+    for the_drug in List_of_drugs:
+        print the_drug, len(the_drug)
+    
+    
+sort_drugs_name_length(List_of_drugs)
+
+# Gives amount of drugs in the list
+
+def number_of_drugs(list):
+    total = 0
+    for drug in List_of_drugs:
+        total = total + 1
+    print total
+    
+number_of_drugs(List_of_drugs)
+
+
+# FInding average of length of drug names
+
+def avg_length_of_drug_name_in_list(list):
+    count = 0
+    sum = 0
+    for drug in List_of_drugs:
+        count = count + 1
+        sum = len(drug) + sum
+        print count, sum, drug
+    #output
+    print "# of drugs', sum of length, avg"
+    print count, sum, (sum / count)
+    
+avg_length_of_drug_name_in_list(List_of_drugs)
+        
+
+
+
+
+
+
+
+
+
+
+
+
